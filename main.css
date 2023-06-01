@@ -37,6 +37,10 @@ a:hover{
     color:rgb(37, 206, 228);
 }
 
+.fa, .fa-brands {
+    color: white;
+}
+
 .hero-container{
     height: 120px;
     background-color: rgb(125, 157, 156); /*old: rgb(162, 103, 172)*/
