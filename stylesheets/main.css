@@ -7,19 +7,19 @@ body {
 }
 
 #main {  
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1em;
+
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%); 
-}
-
-#inner {
-    padding: 2rem;
-    border-radius: 1em;
 
     color: #3f3d51;
     background-color: rgba(245,240,255,0.902);
 }
+
 
 hr {
     height: 1px;
@@ -39,4 +39,12 @@ hr {
 #button:hover {
     color: #8C80D9;
     border-color: #8C80D9;
+}
+
+a {
+    color: #B9A7C4;
+}
+
+a:visited {
+    color: #8C80D9;
 }
