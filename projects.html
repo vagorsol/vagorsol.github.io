@@ -1,60 +1,31 @@
 <!DOCTYPE html>
-<!--page specifically for the projects. wahoo-->
 <html>
     <head>
-        <!--the metadata-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
         rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
         crossorigin="anonymous">
-        <link rel="stylesheet" href="main.css"> <!--probably change this later-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="stylesheets/main.css">
     </head>
+
     <body>
-        <header>
-            <div class="nav-menu">
-                <!--Divides things, like a container-->
-                <nav>
-                    <ul>
-                        <!--ul is unorderd list, so that there is no numbering-->
-                        <li><a href="#home">Home</a></li> <!--make this a home button i guess-->
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+        <div id="main" style="max-width: 4000px;">
+            <div style="float:left">
+                <a class="btn" id="button" href="index.html" style="border-radius: 1em;"><i class="fa-solid fa-house"></i></a>
             </div>
-        </header>
-        <div class="hero-container" id="home">
-            <!--uhh big header thing I think-->
-            <center>
-                <h1>PROJECTS</h1> <!--change font ew-->
-                
-            </center>
-        </div>
-        <!--damn i should reorganize this. also mabye toc + brief blurb (again)-->
-        <!--toc looks like every wiki toc, so sue me-->
-        <div id="stdvHH">
-            <h3>Stardew Valley Home Planner</h3>
-            <p>
-                insert image to the left here
-                <br> also link to the things
-            </p>
-            <p>
-                blurb about why i made this, how it works, also credit to the farm planner for being my biggest reference point
-            </p>
-        </div>
-
-        <div id="borderify">
-            <h3>Boderify</h3>
-            <p>
-                same format: why, what it does, how it works. and links and images
-            </p>
-        </div>
-
-        <div id="soljourner">
-            <h3>Soljourner</h3>
-            <p>
-                my first foray into making a game! ish. chill vibes.
-            </p>
+            <br>
+            <h2 class="mt-4 mb-2 text-uppercase" style="font-size: 2em;">Projects</h2>
+            <hr>
+            <div class="row no-gutters justify-content-center">
+                <div class="col-md-auto"><img src="https://vagorsol.carrd.co/assets/images/image01.jpg" style="max-height:150px; border-radius: 50%"></div>
+                <div class="col-md-auto flex-column justify-content-center align-items-center">
+                    <h4 class="mt-4 mb-2 text-uppercase">Project name</h4>
+                    <p>description here</p>
+                    <a class="btn" id="button">View <i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <!-- copy above and repeat as necessary -->
+            </div>
+            <hr>
         </div>
     </body>
 </html>
