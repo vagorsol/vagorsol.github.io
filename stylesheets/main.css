@@ -44,7 +44,9 @@ hr {
 a {
     color: #B9A7C4;
 }
-
+a:hover {
+    color:#6959d2
+}
 a:visited {
     color: #8C80D9;
 }
