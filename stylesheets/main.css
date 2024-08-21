@@ -6,78 +6,129 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 
+    font-family: Nunito;
+
+
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
 
+@media screen and (min-width: 720px) {
+    #bio-text { width: 35vw;}
+    #portfolio-directory {width: 35vw;}
     
 }
 
 #main {  
+    align-items: center;
     text-align: center;
     padding: 2rem;
+    order: 1;
 }
 
-#section {
+#bio-text {
     padding: 1.25rem;
     border-radius: 1rem;   
 
     background-color: rgba(245,240,255,0.65); 
 }
 
-hr {
-    height: 1px;
-    width: 35%;
-    
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    
-    color: #746f79;
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
 }
 
-#button {
-    border-radius: 1.25em;
-    margin: 5px;
-    color: #a28caf;
-    border-color: #a28caf;
+#pfp-image{
+    order: 1;
 }
-#button:hover {
+#info {
+    order: 2;
+    align-items: center;
+}
+
+/* Buttons and Navigation  */
+.button {
+    border: 2px solid #a28caf;
+    border-radius: 45%;
+    margin: 5px;
+    padding: 20px 15px 10px 15px;
+    color: #a28caf;
+}
+.button:hover {
     color: #8C80D9;
     border-color: #8C80D9;
 }
 
-#page-link {
-    border: 2px #2e173b solid;
-    border-radius: 1.25em;
-    color: #6e4f80;
+#portfolio-directory{
+    margin: 5px;
+    order: 2;
+}
 
-    padding: 20px 10%;
-    font-size: 16px;
-    margin: 4px 2px;
-    opacity: 0.6;
+.grid-container {
+    display: grid; 
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
+}
 
-    display: inline-block;
+.grid-container > a {
+    /* text-align: center; */
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
     text-decoration: none;
     cursor: pointer;    
     text-align: center;
+
+    border: 2px #fff solid;
+    border-radius: 1.25em;
+    color: #ffffff;
+
+    opacity: 0.6;    
+
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-  
-#page-link:hover {
-    opacity: 1
+.grid-container > a:hover {
+    opacity: 1;
+}
+
+.project-page {
+    background-image: url();
+}
+
+.art-page {
+    background-image: url();
+}
+
+.graphics-page {
+    background-image: url();
+}
+
+.fiction-page {
+    background-image: url();
+}
+
+.misc-page {
+    grid-column: 1 / span 2;
+    background-image: url();
 }
 
 a {
     color: #6e4f80;
 }
 a:hover {
-    color:#6959d2
+    color:#6959d2;
+    border-color: #8C80D9;
 }
 
-
+/* Font Specifics */
 h1 { 
     font-size: 48px; 
     font-style: normal; 
