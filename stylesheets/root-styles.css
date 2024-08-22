@@ -1,7 +1,15 @@
 body {
     margin: 0;
     padding: 20px 10%;
-    justify-content: space-evenly;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0px auto;
+    
 
     background-image: linear-gradient(#ab91cc, #C2C7ED);
     height: 100%;   
@@ -16,15 +24,10 @@ body {
     line-height: 1.5;
 }
 
-@media screen and (min-width: 720px) {
-    body {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-    }
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 a {
@@ -35,19 +38,28 @@ a:hover {
     border-color: #8C80D9;
 }
 
-
 .button {
+    text-decoration: none;
+
     margin: 5px;
     padding: 0.5rem;
     display: inline-block;
 
     color: #a28caf;
     border: 2px solid #a28caf;
-    border-radius: 45%;   
+    border-radius: 1.5rem;   
 }
 .button:hover {
     color: #8C80D9;
     border-color: #8C80D9;
+}
+
+
+hr {
+    border: 0.5px rgba(124, 108, 143, 0.25) solid;
+    border-radius: 50%;
+    width: 50%;
+    margin: 0.75rem auto;
 }
 
 /* Font Specifics */
@@ -56,7 +68,12 @@ h1 {
     font-style: normal; 
     font-variant: normal; 
     font-weight: 700;
+    margin: 0;
 } 
+
+h2 {
+    letter-spacing: 1px;
+}
 
 p {  
     font-size: 18px; 

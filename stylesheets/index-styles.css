@@ -1,21 +1,3 @@
-/* body {
-    margin: 0;
-    padding: 20px 10%;
-    justify-content: space-evenly;
-
-    background-image: linear-gradient(#ab91cc, #C2C7ED);
-    height: 100%;   
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-    font-family: Nunito;
-    font-size: 18px; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 400; 
-    line-height: 1.5;
-} */
-
 @media screen and (min-width: 720px) {
     body {
         position: absolute;
@@ -28,6 +10,18 @@
     #bio-section { width: 35vw;}
     #portfolio-directory {
         width: 35vw;
+    }
+}
+
+/* desktop view */
+@media screen and (min-width: 720px) {
+    body {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
     }
 }
 
@@ -64,14 +58,9 @@
     margin: 1.5rem 0rem 0.5rem;
 }
 
-.wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-}
-
 #pfp-image{
     order: 1;
+    border-radius: 25%;
 }
 #info {
     order: 2;
