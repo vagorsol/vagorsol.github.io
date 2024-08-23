@@ -84,11 +84,18 @@ p {
 } 
 
 blockquote { 
-    font-size: 21px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 400; 
     line-height: 1.5; 
+
+    padding-left: 10px;
+    text-align: left;
+    max-width: 90%;
+    display: inline-block;
+
+    border-left: 2px solid rgba(124, 108, 143, 0.25);
+    background-color: transparent;
 }
 
 pre { 

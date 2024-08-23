@@ -1,4 +1,3 @@
-
 .return-button {
     position: fixed;
     top: 2.5%;
@@ -17,9 +16,14 @@
     background-color: rgba(245,240,255,0.65); 
 }
 
+.project-desc {
+    text-align: center;
+}
+
 hr {
     margin: 1.5rem auto;
 }
+
 
 .thumbnail {
     order: 1;
