@@ -8,16 +8,50 @@
         <link rel="shortcut icon" href="assets/favicon.ico">
         <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
         <link rel="stylesheet" href="stylesheets/root-styles.css" />
-        <link rel="stylesheet" href="stylesheets/miscellany-styles.css" />
+        <link rel="stylesheet" href="stylesheets/pages-styles.css" />
     </head>
     <body>
         <div id="main">
             <div class="return-button"> 
                 <a class="button" href="index.html"><i class="fa-solid fa-house"></i></a>
             </div>
+
             <div>
-               <h1>Computer Graphics</h1>
+               <h1>Computer Graphics & Animation</h1>
                 there's nothing here yet!
             </div>
+            
+            <div id="filters">
+                <button class="btn active">Show All</button>
+                <button class="btn">Graphics</button>
+                <button class="btn">Animation</button>
+            </div>
+
+            <div class="items">
+                <div class="project-section"> 
+                    <div class="wrapper">
+                        <img class="thumbnail" src="assets/scenegraph_thumbnail.png">
+                        <div class="title">
+                            <h2>Scene Graph</h2>
+                            <span class="project-tags"><span style="text-transform: uppercase; font-weight: bold;"> C++</span>&ensp;&#8226;&ensp;February 2024</span>
+                        </div>
+                    </div>
+                    
+                    <hr> 
+                    <div class="wrapper">
+                        <div class="project-desc desc-slim">
+                            <p>A tree data structure that represents a hierarchy of transformations,
+                                wherein child nodes inherit their parent's transformations, for the articulation of a model.</p>
+                            <p>
+                                Done as part of CIS 5600: Interactive Computer Graphics at University of Pennsylvania in Spring, 2024.
+                            </p>
+                        </div>
+                        <div class="sample-img">
+                            <img class="demo" id="scene-demo" src="assets/scenegraph_demo.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
