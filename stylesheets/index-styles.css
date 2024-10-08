@@ -50,7 +50,7 @@
 }
 
 #bio-text {
-    text-align: center;
+    text-align: start;
 }
 
 #links {
@@ -88,9 +88,9 @@
     text-align: center;
     cursor: pointer;
 
-    border: 2px #fff solid;
+    border: 3.5px #6e4f80 solid;
     border-radius: 1.25em;
-    color: #ffffff;
+    color: #6e4f80;
 
     opacity: 0.6;  
     
@@ -104,6 +104,8 @@
 }
 .grid-container > a:hover {
     opacity: 1;
+    color: #efecfd;
+    border-color: #efecfd;
 }
 
 .project-page {
