@@ -2,12 +2,16 @@
 @media screen and (min-width: 720px) {
     .items {
         display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .project-section {
         width: 85%;
+    }
+    
+    .desc-slim {
+        width: 45%;
     }
 }
 
@@ -18,7 +22,11 @@
     padding: 0.25rem;
 
     border-radius: 1.5rem; 
-    background-color: rgba(245,240,255,0.5); 
+    background-color: rgba(245,240,255,0.75); 
+}
+
+.items {
+    text-align: justify;
 }
 
 .project-section {
@@ -85,16 +93,14 @@ button.active {
 
 .project-desc {
     order: 1;
-    
-}
-
-.desc-slim {
-    max-width: 65%;
-    text-align: left;
 }
 
 .sample-img {
     order: 2;
+}
+
+.desc-slim { 
+    text-align: justify;
 }
 
 .demo {

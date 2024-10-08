@@ -60,7 +60,12 @@
 }
 #info {
     order: 2;
-    align-items: center;
+    align-items: justify;
+}
+
+#bio-text {
+    text-align: justify;
+    padding: 0.5rem;
 }
 
 #portfolio-directory{
@@ -81,7 +86,7 @@
     font-weight: 600;
     letter-spacing: 1px;
     text-decoration: none;
-    text-align: center;
+    /* text-align: center; */
     cursor: pointer;
 
     border: 3.5px #6e4f80 solid;
