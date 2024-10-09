@@ -27,6 +27,7 @@
 
 .items {
     text-align: justify;
+    overflow: hidden;
 }
 
 .project-section {
@@ -109,4 +110,11 @@ button.active {
 
     display: flex;
     flex-direction: column;   
+}
+
+.filter-elem {
+    display: none;
+}
+.show {
+    display: block;
 }

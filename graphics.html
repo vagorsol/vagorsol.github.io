@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="stylesheets/root-styles.css" />
         <link rel="stylesheet" href="stylesheets/pages-styles.css" />
     </head>
+
     <body>
         <div id="main">
             <div class="return-button"> 
@@ -22,13 +23,13 @@
             </div>
             
             <div id="filters">
-                <button class="btn active">Show All</button>
-                <button class="btn">Graphics</button>
-                <button class="btn">Animation</button>
+                <button class="btn active" onclick="filterSelection('all')">Show All</button>
+                <button class="btn" onclick="filterSelection('graphics')">Graphics</button>
+                <button class="btn" onclick="filterSelection('animation')">Animation</button>
             </div>
 
             <div class="items">
-                <div class="project-section"> 
+                <div class="project-section graphics filter-elem"> 
                     <div class="wrapper">
                         <img class="thumbnail" src="assets/scenegraph_thumbnail.png">
                         <div class="title">
@@ -53,5 +54,7 @@
                 </div>
             </div>
         </div>
+
+        <script type="text/javascript" src="javascripts/filter.js"></script>
     </body>
 </html>
