@@ -5,6 +5,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        /* overflow-wrap: break-word; */
     }
     .project-section {
         width: 85%;
@@ -36,6 +37,9 @@
 
     border-radius: 1rem;   
     background-color: rgba(245,240,255,0.65); 
+    background-color: rgba(245,240,255,0.65); 
+    /* align: center; */
+    background-color: rgba(245,240,255,0.65);
     /* align: center; */
 }
 
@@ -96,21 +100,23 @@ button.active {
     order: 1;
 }
 
-.sample-img {
-    order: 2;
-}
-
 .desc-slim { 
     text-align: justify;
 }
 
 .demo {
-    border-radius: 2.5%;
-    border: #B9A7C4 0.15rem solid;
+    max-width: 100%;
+    height: auto;
+    order: 2;
 
     display: flex;
     flex-direction: column;   
 }
+.demo-bordered {
+    border-radius: 2.5%;
+    border: #B9A7C4 0.15rem solid;
+}
+
 
 .filter-elem {
     display: none;
