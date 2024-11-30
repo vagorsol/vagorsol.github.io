@@ -19,7 +19,6 @@
 
             <div>
                <h1>Computer Graphics & Animation</h1>
-                there's nothing here yet!
             </div>
             
             <div id="filters">
@@ -29,7 +28,37 @@
             </div>
 
             <div class="items">
-                <div class="project-section graphics filter-elem"> 
+                <div class="project-section graphics filter-elem" id="mini-minecraft">
+                    <div class="wrapper">
+                        <img class="thumbnail" src="assets/mminecraft_thumbnail.png">
+                        <div class="title">
+                            <h2>Mini Minecraft</h2>
+                            <span class="project-tags"><span style="text-transform: uppercase; font-weight: bold;"> C++, OpenGL</span>&ensp;&#8226;&ensp;April 2024</span>
+                        </div>
+                    </div>
+                    
+                    <hr> 
+                    <div class="wrapper">
+                        <div class="project-desc desc-slim">
+                            <p>A simple interactive 3D world mimicking the game Minecraft (<i>Mojang Studios</i>, 2011), made in collaboration with others.</p>
+                            <p>
+                                I implemented the following components:
+                                <ul>
+                                    <li><b>Player Physics</b> (movement; gravity & collision; camera control)</li>
+                                    <li><b>Texturing and Texture Animation</b>, with transparent textures (water; lava)</li>
+                                    <li><b>Wave Animation</b> with Blinn-Phong highlights</li>
+                                    <li>Also assisted with assets for <b>procedurally placed assets.</b></li>
+                                </ul>
+                            </p>
+                            <p>
+                                Done as part of CIS 5600: Interactive Computer Graphics at University of Pennsylvania in Spring, 2024.
+                            </p>
+                        </div>
+                        <video class="demo" width="420" controls><source src="assets/mini_minecraft.mp4" type="video/mp4"></video>
+                    </div>
+                </div>
+
+                <div class="project-section graphics filter-elem" id="scene-graph"> 
                     <div class="wrapper">
                         <img class="thumbnail" src="assets/scenegraph_thumbnail.png">
                         <div class="title">
@@ -47,9 +76,8 @@
                                 Done as part of CIS 5600: Interactive Computer Graphics at University of Pennsylvania in Spring, 2024.
                             </p>
                         </div>
-                        <div class="sample-img">
-                            <img class="demo" id="scene-demo" src="assets/scenegraph_demo.gif">
-                        </div>
+                        <img class="demo demo-bordered" id="scene-demo" src="assets/scenegraph_demo.gif">
+                        
                     </div>
                 </div>
             </div>
