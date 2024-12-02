@@ -28,9 +28,10 @@
             </div>
 
             <div class="items">
+                <!-- Mini Minecraft -->
                 <div class="project-section graphics filter-elem" id="mini-minecraft">
                     <div class="wrapper">
-                        <img class="thumbnail" src="assets/mminecraft_thumbnail.png">
+                        <img class="thumbnail" src="assets/mminecraft_thumbnail.png" alt="A screenshot of a Minecraft hillside.">
                         <div class="title">
                             <h2>Mini Minecraft</h2>
                             <span class="project-tags"><span style="text-transform: uppercase; font-weight: bold;"> C++, OpenGL</span>&ensp;&#8226;&ensp;April 2024</span>
@@ -54,11 +55,16 @@
                                 Done as part of CIS 5600: Interactive Computer Graphics at University of Pennsylvania in Spring, 2024.
                             </p>
                         </div>
-                        <video class="demo" width="420" controls><source src="assets/mini_minecraft.mp4" type="video/mp4"></video>
+                        <div class="demo-container">
+                            <video class="demo" width="420" controls><source src="assets/mini_minecraft.mp4" type="video/mp4">
+                                <p>A video of a Minecraft recreation, highlighting its various features.</p>
+                            </video>
+                        </div>
                     </div>
                 </div>
 
-                <div class="project-section graphics filter-elem" id="scene-graph"> 
+                <!-- Scene Graph -->
+                <div class="project-section graphics filter-elem" id="scene-graph" alt="A 2D humanoid model composed of rectangles."> 
                     <div class="wrapper">
                         <img class="thumbnail" src="assets/scenegraph_thumbnail.png">
                         <div class="title">
@@ -76,7 +82,39 @@
                                 Done as part of CIS 5600: Interactive Computer Graphics at University of Pennsylvania in Spring, 2024.
                             </p>
                         </div>
-                        <img class="demo demo-bordered" id="scene-demo" src="assets/scenegraph_demo.gif">
+                        <div class="demo-container">
+                            <img class="demo demo-bordered" id="scene-demo" 
+                                alt="A GIF of a 2D humanoid model waving its arm up and down. In the control panel, the value for 'Right Arm Rotate' is continuously adjusted."
+                                src="assets/scenegraph_demo.gif">
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- MotionBlender -->
+                <div class="project-section animation filter-elem" id="mb-mocap"> 
+                    <div class="wrapper">
+                        <img class="thumbnail" src="assets/walkcycle.gif" alt="A GIF of a human model walking. In the middle of its stride, it is shown walking in slow-motion." width="150">
+                        <div class="title">
+                            <h2>Motion Blending & Walk Cycle</h2>
+                            <span class="project-tags"><span style="text-transform: uppercase; font-weight: bold;">MoCap, MotionBuilder</span>&ensp;&#8226;&ensp;November 2023
+                        </div>
+                    </div>
+                    
+                    <hr> 
+                    <div class="wrapper">
+                        <div class="project-desc desc-slim">
+                            <p>A keyframe animation walk-cycle and blended motion capture, done in MotionBuilder as part of CIS 5620: Computer Animation at University of Pennsylvania in Fall, 2024.
+                            </p>
+                        </div>
+                         <div class="demo-container">
+                            <img class="demo demo-bordered" id="mb-demo" src="assets/motionblending.gif" 
+                                alt="A GIF of a human model walking in a circle, transitioning from a run with its arm back, to a hunched-over shuffle, to finally a penguin waddle."
+                                style="height: 250px; width: auto;">
+                            <!-- <img class="demo demo-bordered" id="walkcycle-demo" src="assets/walkcycle.gif" 
+                                alt="A GIF of a human model walking. In the middle of its stride, it is shown walking in slow-motion." 
+                                style="height: 200px; width: auto; margin: 5px;"> -->
+                         </div>
                         
                     </div>
                 </div>
