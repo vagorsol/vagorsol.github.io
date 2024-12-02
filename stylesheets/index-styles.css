@@ -72,6 +72,9 @@
     margin: 5px;
     order: 2;
 }
+.button {
+    width: 2.5rem;
+}
 
 .grid-container {
     display: grid; 
@@ -86,7 +89,6 @@
     font-weight: 600;
     letter-spacing: 1px;
     text-decoration: none;
-    /* text-align: center; */
     cursor: pointer;
 
     border: 3.5px #6e4f80 solid;
