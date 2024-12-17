@@ -1,7 +1,8 @@
-let slideIndex = [1];
-let slideID = ["shader-slides"]; // class tag for each slideshow so it can be gotten later
+let slideIndex = [1, 1, 1];
+let slideID = ["shader-slides", "particle-slides", "mocap-slides"]; // class tag for each slideshow so it can be gotten later
 showSlides(1, 0);
-// default slides to show as
+showSlides(1, 1);
+showSlides(1, 2);
 
 function incrSlide(slideNo, slideShowID) {
     showSlides(slideIndex[slideShowID] += slideNo, slideShowID);

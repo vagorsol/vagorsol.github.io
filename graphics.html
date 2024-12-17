@@ -63,7 +63,7 @@
                 </div>
 
                 <!-- Shaders (Post-Processing & Noise Functions) -->
-                <div class="project-section graphics filter-elem" id="mb-mocap"> 
+                <div class="project-section graphics filter-elem" id="shaders"> 
                     <div class="wrapper">
                         <div class="title">
                             <h2>Shaders</h2>
@@ -84,28 +84,28 @@
                                 <div class="slide shader-slides">
                                     <img class="demo" id="surface-shader" 
                                     src="assets/graphics/shader/surfaceshaders.png"
-                                    alt=""
+                                    alt="Two shots of a Mario model: one with Lambertian shading and the other with Blinn-Phong reflection."
                                     style="height: auto;">
                                     <div class="caption">Shaders</div>
                                 </div>
                                 <div class="slide shader-slides">
                                     <img class="demo" id="matcap" 
                                     src="assets/graphics/shader/matcap.png"
-                                    alt=""
+                                    alt="Mario models with the following material capture shaders: red wax, silver, plastic, gold, haunted, and surface normals."
                                     style="height: auto;">
                                     <div class="caption">MatCap Shaders</div>
                                 </div>
                                 <div class="slide shader-slides">
                                     <img class="demo" id="postprocessing-shaders"
                                     src="assets/graphics/shader/postprocessing_2.png"
-                                    alt=""
+                                    alt="Mario models under the following post-processing effects: Gaussian blur, pointilism, and Sobel filter."
                                     style="height: auto;">
                                     <div class="caption">Post-Processing Effects</div>
                                 </div>
                                 <div class="slide shader-slides">
                                     <img class="demo" id="postprocessing-shaders"
                                     src="assets/graphics/shader/vertexdeformation.gif"
-                                    alt=""
+                                    alt="A Mario model ballooning out into a sphere, before returning back to it's original humanoid model state.
                                     style="height: auto; border: 5px solid #000000;">
                                     <div class="caption">Vertex Deformation via Post-Processing</div>
                                 </div>
@@ -143,6 +143,53 @@
                     </div>
                 </div>
 
+                <!-- Particle System -->
+                <div class="project-section animation filter-elem" id="particle-system" alt="A 2D humanoid model composed of rectangles."> 
+                    <div class="wrapper">
+                        <div class="title">
+                            <h2>Particle Systems</h2>
+                            <span class="project-tags"><span style="text-transform: uppercase; font-weight: bold;"> Houdini FX, C++</span>&ensp;&#8226;&ensp;November 2023</span>
+                        </div>
+                    </div>
+                    
+                    <hr> 
+                    <div class="wrapper">
+                        <div class="project-desc desc-slim">
+                            <p>An implementation of a particle system and a fireworks simulation, as well as a firework simulation made in Houdini FX.</p>
+                            <p>Done as part of CIS 5620: Computer Animation at University of Pennsylvania in Fall, 2023.
+                            </p>
+                        </div>
+                        
+                        <div class="demo-container">
+                            <div class="slideshow-container" style="text-align: center; max-width: 300px;">
+                                <div class="slide particle-slides">
+                                    <img class="demo demo-bordered" id="surface-shader" 
+                                    src="assets/graphics/houdini_fireworks.gif"
+                                    alt="A fountain of particles."
+                                    style="height: auto;">
+                                    <div class="caption">Particles in Houdini FX</div>
+                                </div>
+                                <div class="slide particle-slides">
+                                    <img class="demo demo-bordered" id="matcap" 
+                                    src="assets/graphics/particles.gif"
+                                    alt="A puff of particles."
+                                    style="height: auto;">
+                                    <div class="caption">Particles in C++</div>
+                                </div>
+                                <div class="slide particle-slides">
+                                    <img class="demo demo-bordered" id="postprocessing-shaders"
+                                    src="assets/graphics/fireworks.gif"
+                                    alt="Several cones launched in the air and explode into circular fireworks."
+                                    style="height: auto;">
+                                    <div class="caption">Fireworks in C++</div>
+                                </div>
+                                <a class="prev" onclick="incrSlide(-1, 1)">&#10094;</a>
+                                <a class="next" onclick="incrSlide(1, 1)">&#10095;</a>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>  
+
                 <!-- MotionBlender -->
                 <div class="project-section animation filter-elem" id="mb-mocap"> 
                     <div class="wrapper">
@@ -157,25 +204,30 @@
                         <div class="project-desc desc-slim">
                             <p>A keyframe animation walk-cycle and blended motion capture, in MotionBuilder
                             </p>
-                            <p>Done as part of CIS 5620: Computer Animation at University of Pennsylvania in Fall, 2024.
+                            <p>Done as part of CIS 5620: Computer Animation at University of Pennsylvania in Fall, 2023.
                             </p>
                         </div>
-                        <div class="demo-container" style="align-items: center;">
-                                <div>
-                                    <img class="demo demo-bordered" id="mb-demo" src="assets/graphics/motionblending.gif" 
+                        <div class="demo-container">
+                            <div class="slideshow-container" style="text-align: center; max-width: 250px;">
+                                <div class="slide mocap-slides">
+                                    <img class="demo demo-bordered"
+                                    src="assets/graphics/motionblending.gif" 
                                     alt="A GIF of a human model walking in a circle, transitioning from a run with its arm back, to a hunched-over shuffle, to finally a penguin waddle."
-                                    style="height: 250px; width: auto;">
+                                    style="height: auto;">
                                     <div class="caption">Walk Cycle</div>
                                 </div>
 
-                                <div>
-                                    <img class="demo demo-bordered" id="walkcycle-demo" src="assets/graphics/walkcycle.gif" 
+                                <div class="slide mocap-slides">
+                                    <img class="demo demo-bordered"
+                                    src="assets/graphics/walkcycle.gif" 
                                     alt="A GIF of a human model walking. In the middle of its stride, it is shown walking in slow-motion." 
-                                    style="height: 200px; width: auto; margin: 5px;">
+                                    style="height: auto;">
                                     <div class="caption">Blended Mocap</div>
                                 </div>
-                            </div>                           
-                         </div>
+                                <a class="prev" onclick="incrSlide(-1, 2)">&#10094;</a>
+                                <a class="next" onclick="incrSlide(1, 2)">&#10095;</a>
+                            </div>                        
+                        </div>
                         
                     </div>
                 </div>
