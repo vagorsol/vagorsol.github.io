@@ -94,8 +94,6 @@
     border: 3.5px #6e4f80 solid;
     border-radius: 1.25em;
     color: #6e4f80;
-
-    opacity: 0.6;  
     
     display: flex;
     justify-content: center;
@@ -111,23 +109,24 @@
     border-color: #efecfd;
 }
 
-.project-page {
+#project-page {
     background-image: url();
 }
 
-.art-page {
+#art-page {
     background-image: url();
 }
 
-.graphics-page {
+#graphics-page {
+    background-image: linear-gradient(to right, rgba(255,255,255, 0.6) 0 100%), 
+                        url("../assets/graphics/mb_thumbnail.png");
+}
+
+#fiction-page {
     background-image: url();
 }
 
-.fiction-page {
-    background-image: url();
-}
-
-.misc-page {
+#misc-page {
     grid-column: 1 / span 2;
     background-image: url();
 }
