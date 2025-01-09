@@ -128,5 +128,6 @@
 
 #misc-page {
     grid-column: 1 / span 2;
-    background-image: url();
+    background-image:  linear-gradient(to right, rgba(255,255,255, 0.6) 0 100%), 
+    url("../assets/miscellany_banner.png");
 }
