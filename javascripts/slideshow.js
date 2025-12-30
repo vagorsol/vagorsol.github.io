@@ -1,8 +1,11 @@
-let slideIndex = [1, 1, 1];
-let slideID = ["shader-slides", "particle-slides", "mocap-slides"]; // class tag for each slideshow so it can be gotten later
+let slideIndex = [1, 1, 1, 1];
+let slideID = ["slide1", "slide2", "slide3", "slide4"]; // class tag for each slideshow so it can be gotten later
+
+// how to get this to work accross multiple pages
 showSlides(1, 0);
 showSlides(1, 1);
 showSlides(1, 2);
+showSlides(1, 3);
 
 function incrSlide(slideNo, slideShowID) {
     showSlides(slideIndex[slideShowID] += slideNo, slideShowID);
