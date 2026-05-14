@@ -1,130 +1,151 @@
 @media screen and (min-width: 720px) {
-    body {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
+    .navbar {
+        height: 100%;
+        width: 20%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        display: initial;
+        
+        padding: 30px 5px;
+        background-color: rgba(245,240,255,1); 
     }
-    #bio-section { width: 35vw;}
-    #portfolio-directory {
-        width: 35vw;
+
+    .navbar-mobile {
+        display: none; 
+    }
+
+    .content {
+        width: 80%;
+        padding: 0rem 3rem;
+        margin: 0 auto 0 20%;
+    }
+
+    .contents-demo {
+        width: 35%;
+    }
+
+    .contents-text {
+        width: 60%
     }
 }
 
-/* desktop view */
-@media screen and (min-width: 720px) {
-    body {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-    }
-}
-
-/* mobile view */ 
 @media screen and (min-width: 0px) and (max-width: 720px) {
-    #main { margin: 20px 0px;}
-    #info {text-align: center}
+    .navbar {
+        display: none;
+    }
+    
+    .navbar-mobile {
+        top: 0;
+        position: fixed;
+        width: 100%; 
+        padding: 5px;
+        background-color: rgba(245,240,255,1); 
+        z-index: 1;
+    }
+    
+    .content {
+        margin: 15vh auto;
+    }
+    .contents-demo {
+        width: 95%;
+    }
+
+    .contents-text {
+        width: 95%;
+    }
+
+    .nav-pfp {
+        width: 50px;
+    }
+
+    .nav-item {
+        padding: 10px;
+    }
+
+    .ul {
+        padding-left: 1rem;
+    }
 }
 
-#main {  
-    padding: 2rem;
-    order: 1;
+.nav-pfp {
+    border-radius: 50%;
 }
 
-#bio-section {
+.nav-title {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    color: #000;
+    text-decoration: none; 
+    font-size: 15px;
+}
+
+.nav-item.active {
+    font-weight: bold;
+    color: #6959d2;
+}
+
+.nav-bottom {
+    position: fixed;
+    bottom: 0;
+    padding: 5px;
+}
+
+.nav-bottom-img {
+    width: 100%;
+    max-width: 240px;
+}
+
+.navbar-mobile-contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.contents {
+    min-height: 25vh;
     padding: 1.25rem;
-    border-radius: 1rem;   
-
+    margin: 1rem 0rem;
+    border-radius: 1rem;
     background-color: rgba(245,240,255,0.65); 
 }
 
-#pfp-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contents-header {
+    text-align: left;
 }
 
-#links {
-    text-align: center;
-    margin: 1.5rem 0rem 0.5rem;
+video.demo {
+    width: 100%;
+    max-width: 320px;
 }
 
-#pfp-image{
-    order: 1;
-    border-radius: 25%;
-}
-#info {
-    order: 2;
-    align-items: justify;
+.demo {
+    border-radius: 2.5%;
+    border: #B9A7C4 0.15rem solid;
 }
 
-#bio-text {
-    text-align: justify;
-    padding: 0.5rem;
+.demo-info {
+    text-transform:uppercase;
+    font-weight: bold
 }
 
-#portfolio-directory{
-    margin: 5px;
-    order: 2;
-}
-.button {
-    width: 2.5rem;
+.icon {
+    padding: 0px 5px;
 }
 
-.grid-container {
-    display: grid; 
-    grid-template-columns: auto auto;
-    gap: 10px;
-    padding: 0px 15px;
-}
-
-.grid-container > a {
-    padding: 20px 10px;
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-decoration: none;
-    cursor: pointer;
-
-    border: 3.5px #6e4f80 solid;
-    border-radius: 1.25em;
-    color: #6e4f80;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.grid-container > a:hover {
-    opacity: 1;
-    color: #efecfd;
-    border-color: #efecfd;
-}
-
-#project-page {
-    grid-column: 1 / span 2;
-    background-image: url();
-}
-
-#art-page {
-    background-image: url();
-}
-
-#graphics-page {
-    background-image: linear-gradient(to right, rgba(255,255,255, 0.6) 0 100%), 
-                        url("../assets/graphics/mb_thumbnail.png");
-}
-
-#misc-page {
-    grid-column: 1 / span 2;
-    background-image:  linear-gradient(to right, rgba(255,255,255, 0.6) 0 100%), 
-    url("../assets/miscellany_banner.png");
+.thumbnail {
+    width: 100%;
+    max-width: 320px;
+    object-fit: cover;
 }

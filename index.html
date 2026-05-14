@@ -9,58 +9,217 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" href="stylesheets/root-styles.css" />
         <link rel="stylesheet" href="stylesheets/index-styles.css"/>
-        
-
+    
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
 
     <body>        
-        <div id="main" class="wrapper"> 
-            <div id="bio-section">
+        <div class="navbar">
+            <img class="nav-pfp" src="assets/catimg.png">
+            <div class="nav-title">Audrey Yang</div>
+            <hr>
+            <nav>
+                <li><a class="nav-item" href="#about" data-target="about">About</a></li>
+                <li><a class="nav-item" href="#projects" data-target="projects">Projects</a></li>
+                <li><a class="nav-item" href="#graphics" data-target="graphics">Graphics</a></li>
+                <li><a class="nav-item" href="#miscellany" data-target="miscellany">Miscellany</a></li>
+            </nav>
+            <hr>
+            <a class="button" href="#footer">Contact Me!</a>
+
+            <div class="nav-bottom">
+                <img class="nav-bottom-img" src="assets/sona.png">
+            </div>
+        </div>
+        
+        <div class="navbar-mobile">
+            <div class="navbar-mobile-contents">
+                <img class="nav-pfp" src="assets/catimg.png">
+                <b>Audrey Yang</b>
+                <nav>
+                    <a class="nav-item" href="#about"  data-target="about">About</a>
+                    <a class="nav-item" href="#projects"  data-target="projects">Projects</a>
+                    <a class="nav-item" href="#graphics"  data-target="graphics">Graphics</a>
+                    <a class="nav-item" href="#miscellany"  data-target="miscellany">Miscellany</a>
+                </nav>
+                
+            </div>
+        </div>
+
+        <section class="content">
+            <div class="contents target" id="about">
                 <div class="wrapper">
                     <img id="pfp-image" src="assets/catimg.png">
                     <div id="info">
                         <h1>Audrey Yang</h1>
                         <span style="font-size: 20px; font-weight: 575;">
-                            Computer Graphics & Game Technology 
-                            <br> Master's Degree Student @ UPenn
+                            <a href="https://www.cis.upenn.edu/mse-in-cggt/">Computer Graphics & Game Technology</a>
+                            @ UPenn
                         </span>
                     </div>
                 </div>
                 <hr>
                 <div id="bio-text">
                     <p>
-                        A master's student at the University of Pennsylvania, and occasional artist and writer. 
-                        Their interests in the production of games ranges from design and development, to art and animation.
+                        Audrey Yang is a <a href="https://www.cis.upenn.edu/mse-in-cggt/">Computer Graphics & Game Technology</a> master's student at the University of Pennsylvania. 
+                        Their interests in the production of games centers on game design, primarily experiential and narrative design.
                     </p>
-                    <p>They are also moderately pretentious and pedantic about proper video game citation stylization.</p>
+                    <p>
+                        They are also moderately pretentious and pedantic about proper video game citation stylization (the <i>italics!</i>). 
+                        In their spare time, they enjoy drawing, writing, and spending time with pigeons.
+                    </p>
                 </div>
-                <span style="font-weight: bold" style="text-align: center">
+                <span style="font-weight: bold">
                     (This site is currently under construction!)
                 </span>
+                
+            </div>
+
+            <div class="contents target" id="projects">
+                <h2>Projects</h2>
+                <p>
+                    There's nothing here currently! One day, there will be.
+                </p>
+            </div>
+
+
+            <div class="contents target" id="graphics">
+                <h2>Graphics</h2>
+                <!-- StyleShade -->
+                <div class="contents-item" id="styleshade">
+                    <div class="wrapper">
+                        <div class="contents-demo">
+                            <video class="demo" controls style="margin: auto 0px;"><source src="assets/STYLESHADE.mp4" type="video/mp4">
+                                <p>A video showcase of a Maya plugin, creating editble toon shading shadows and highlights.</p>
+                            </video>
+                        </div>
+                        <div class="contents-text">
+        
+                            <div class="contents-header">
+                                <h3>StyleShade</h3>
+                                <span class="demo-info"> Python, GLSL</span>&ensp;&#8226;&ensp;Spring 2026
+                            </div>
+                            <hr>
+                            <p>
+                                A Maya plugin based on the paper <a href="https://lohit.dev/ShadingRig/"><b>Shading Rig: Dynamic Art-directable Stylised Shading for 3D Characters</b></a>, 
+                                creating custome shadow edits to refine toon shading. 
+                                This tool was made in collaboration with <a href="https://www.juliesweiart.com/">Julie Swei</a>.
+                                I implemented the following components:        
+                            </p>
+                            <ul style="text-align: left">
+                                <li><b>Shading Parameters</b> (movement; gravity & collision; camera control)</li>
+                                <li><b>Interpolation</b>, with transparent textures (water; lava)</li>
+                            </ul>
+                            <p>
+                                Done as part of CIS 6600: Advanced Topics in Computer Graphics at University of Pennsylvania in Spring, 2026.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
                 <hr>
-                <div id="links">
-                    <a class="button" title="Resume" href="" target="_blank" rel="noopener noreferrer"><i class="icon fa-2x fa-solid fa-file"></i></a>
-                    <a class="button" title="GitHub" href="https://github.com/vagorsol" target="_blank" rel="noopener noreferrer"><i class="icon fa-2x fa-brands fa-github"></i></a>
-                    <a class="button" title="Itch Page" href="https://vagorsol.itch.io/" target="_blank" rel="noopener noreferrer"><i class="icon fa-2x fa-brands fa-itch-io"></i></a>
-                    <a class="button" title="Email" href="mailto: aqyang02@gmail.com" target="_blank" rel="noopener noreferrer"><i class="icon fa-2x fa-solid fa-envelope"></i></a>
+                <!-- Mini Minecraft -->
+                <div class="contents-item" id="mini-minecraft">
+                    <div class="wrapper">
+                        <div class="contents-demo">
+                            <video class="demo" controls style="margin: auto 0px;"><source src="assets/graphics/mini_minecraft.mp4" type="video/mp4">
+                                <p>A video of a Minecraft recreation, highlighting its various features.</p>
+                            </video>
+                        </div>
+                        <div class="contents-text">
+                            <div class="contents-header">
+                                <h3>Mini Minecraft</h3>
+                                <span class="demo-info"> C++, OpenGL</span>&ensp;&#8226;&ensp;April 2024
+                            </div>
+                            <hr>
+                            <p>
+                                A simple interactive 3D world mimicking the game Minecraft (<i>Mojang Studios</i>, 2011), made in collaboration with others.
+                                I implemented the following components:        
+                            </p>
+                            <ul style="text-align: left">
+                                <li><b>Player Physics</b> (movement; gravity & collision; camera control)</li>
+                                <li><b>Texturing and Texture Animation</b>, with transparent textures (water; lava)</li>
+                                <li><b>Wave Animation</b> with Blinn-Phong highlights</li>
+                                <li>Assisted with assets for <b>procedurally placed assets.</b></li>
+                            </ul>
+                            <p>
+                                Done as part of CIS 5600: Interactive Computer Graphics at University of Pennsylvania in Spring, 2024.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div id="portfolio-directory" class="grid-container">
-                    <a id="project-page" href="projects.html">
-                        Projects
-                    </a>
-                    <a id="graphics-page" href="graphics.html">
-                        Computer Graphics
-                    </a>
-                    <a id="art-page" href="artwork.html">
-                        Art & Modeling
-                    </a>
-                    <a id="misc-page" href="miscellany.html">
-                        Miscellany
-                    </a>
+            <div class="contents target" id="miscellany">
+                <h2>Miscellany</h2>
+                
+                <!-- Catsino Crawler -->
+                <div class="contents-item" id="catsino">
+                    <div class="wrapper">
+                        <div class="contents-demo">
+                           <img class="demo thumbnail" src="assets/miscellanery/catsino_thumbnail.png">
+                        </div>
+                        <div class="contents-text">
+                            <div class="contents-header">
+                                <a href="https://gx.games/games/97z9ms/catsino-crawler/tracks/91ce71c0-4a42-48a1-9501-d80cdb176624/" target="_blank" rel="noopener noreferrer">
+                                    <h3><i>Catsino Crawler</i></h3> 
+                                </a>
+                    
+                                <span class="demo-info"> Game Maker Studio | Art</span>&ensp;&#8226;&ensp;May 2024
+                            </div>
+                            <hr>
+                            <blockquote> 
+                                <p><i>Gambling ruins lives. In your case, gambling ruined eight of them! </i></p>
+                                <p>Play as One-Life-Louie, a down-on-their-luck cat whose lives were stolen by the nefarious Dog Mafia. </p>
+                            </blockquote>
+                            <p style="margin-top: 0px">
+                                Final project for FMST 035: Video Game Design & Creation at Swarthmore College in Spring, 2024.
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Warframe Name Generator -->
+                <div class="contents-item" id="catsino">
+                    <div class="wrapper">
+                        <div class="contents-demo">
+                           <img class="demo thumbnail" src="assets/miscellanery/wf namegen img.png">
+                        </div>
+                        <div class="contents-text">
+                            <div class="contents-header">
+                                <a href="https://vagorsol.github.io/wf-namegen/" target="_blank" rel="noopener noreferrer">
+                                    <h3><i>Warframe</i> Name Generator</h3> 
+                                </a>
+                    
+                                <span class="demo-info"> Web | Javascript</span>&ensp;&#8226;&ensp;July 2023
+                            </div>
+                            <hr>
+                        <p>
+                            A random name generator for the various factions from <a href="http://www.warframe.com" style="font-style:italic" target="_blank" rel="noopener noreferrer">Warframe</a>.
+                            Emphasis on "random."
+                        </p>
+                              
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-        </div> 
+
+            <hr>
+
+            <div id="footer" style="align-items: center; ">
+                <a title="Resume" href="" target="_blank" rel="noopener noreferrer"><i class="icon fa-2x fa-solid fa-file"></i></a>
+                <a title="LinkedIn" href="https://www.linkedin.com/in/audrey-yang-9497083b7/" target="_blank" rel="noopener noreferrer"><i class="icon fa-2x fa-brands fa-linkedin"></i></a>
+                <a title="GitHub" href="https://github.com/vagorsol" target="_blank" rel="noopener noreferrer"><i class="icon fa-2x fa-brands fa-github"></i></a>
+                <a title="itch.io" href="https://vagorsol.itch.io/" target="_blank" rel="noopener noreferrer"><i class="icon fa-2x fa-brands fa-itch-io"></i></a>
+                <a title="Email" href="mailto: aqyang02@gmail.com" target="_blank" rel="noopener noreferrer"><i class="icon fa-2x fa-solid fa-envelope"></i></a> 
+            </div>
+        </section> 
+
+        <script type="text/javascript" src="javascripts/slideshow.js"></script>
+        <script type="text/javascript" src="javascripts/highlight.js"></script>
     </body>
 </html>

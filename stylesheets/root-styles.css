@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 20px 10%;
+    box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
@@ -45,8 +46,8 @@ a:hover {
     padding: 0.5rem;
     display: inline-block;
 
-    color: #a28caf;
-    border: 2px solid #a28caf;
+    color: #6e4f80;
+    border: 2px solid #6e4f80;
     border-radius: 1.5rem;   
 }
 .button:hover {
@@ -81,6 +82,9 @@ p {
     font-variant: normal; 
     font-weight: 400; 
     line-height: 1.5;
+    text-align: justify;
+    word-wrap: break-word;
+    text-overflow: "-";
 } 
 
 blockquote { 
