@@ -105,8 +105,10 @@
 }
 
 .nav-bottom-img {
-    width: 100%;
-    max-width: 240px;
+    height: auto;
+    max-height: 33vh;
+    width: auto;
+    max-width: 25vw;
 }
 
 .navbar-mobile-contents {
